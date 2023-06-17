@@ -1,0 +1,12 @@
+//FOR PUSHING WEB SITE ON HEROKU.
+heroku login
+git init
+heroku git:remote -a "gossipbuddy"
+git add .
+git commit -am "commit 22/04/2022"
+git push heroku master
+heroku open
+
+//FOR OPEN ON LOCALHOST
+npm run dev
+open on localhost:5000

@@ -1,0 +1,227 @@
+img {
+    width: 250px;
+}
+
+input {
+    padding: 8px;
+    border : 1px solid #cccccc;
+}
+
+button {
+    padding         : 8px;
+    border          : 1px solid #888888;
+    cursor          : pointer;
+    background-color: slategrey;
+}
+
+.head1 {
+    font-size  : 40px;
+    color      : #009900;
+    font-weight: bold;
+}
+
+.head2 {
+    
+    font-size    : 17px;
+    margin-bottom: 15px;
+}
+
+body {
+    margin             : 0 auto;
+    background-position: center;
+    background-size    : contain;
+    margin-left        : 2px;
+    font-family: "Montserrat";
+}
+
+.menu {
+    position        : sticky;
+    height: 40px;
+    top             : 0;
+   /* background-color: cornflowerblue;*/
+   background-image: linear-gradient( to bottom left ,rgb(255, 255, 255), #005ce6); 
+    padding         : 15px 25px;
+    color           : rgb(5, 5, 5);
+    margin          : 0 auto;
+    overflow        : hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu a {
+    float          : left;
+    color          :rgb(252, 251, 251);
+    text-align     : center;
+    margin-right: 20px;
+    /* padding        : 14px 16px; */
+    text-decoration: none;
+    font-size      : 16px;
+    font-family: "Montserrat";
+}
+
+.menu a:hover{
+    border-bottom: 2.5px solid black;
+}
+
+.menu-logout {
+    border-radius: 5px;
+    padding: 8px 12px;
+    background-color:black;
+    right: auto;
+    float: right;
+}
+#logout{
+    color: white;
+    font-size: 12px;
+    margin-right: 0px;
+}
+.menu-logout:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.192);
+}
+#logout:hover{
+    border-bottom: none;
+}
+.body_sec {
+    margin-left: 0px;
+    color: aliceblue;
+}
+
+#greeting{
+ color: rgb(247, 248, 251);
+    font-size: 32px;
+    margin: 150px;
+    text-align: right;
+    opacity: 0;
+    animation: reveal 0.8s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+}
+#greeting:hover{
+    transform: scale(1.2);
+}
+footer {
+    position: fixed; 
+    padding: 10px 10px 0px 10px; 
+    bottom: 0; 
+    width: 100%; 
+/* Height of the footer*/  
+    height: 40px; 
+/*background-color: ;*/
+    background-image: linear-gradient( to bottom right ,rgba(255, 255, 255, 0), #005ce6); 
+    color           : rgb(254, 253, 253);
+    
+  }
+  
+/* Join Page Styles */
+  .centered-form {
+/* background: #333744; */
+    background-image: url(../img/chat2.jpg);
+/* background-color: rgb(71, 175, 232) ;*/
+    width: 100%;
+    height: 90vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-form__box {
+/* box-shadow: 0px 0px 17px 1px #6a76a3; */
+    background: whitesmoke;
+    padding: 25px;
+    width: 500px;
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.centered-form button {
+    width: 100%;
+    border-radius: 100px;
+    background-color: rgb(160, 160, 160);
+    border: none;
+    outline: none;
+}
+
+.centered-form button:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.192);
+    
+    }
+    
+.centered-form input {
+        margin-bottom: 16px;
+}
+
+.centered-form input {
+    margin-bottom: 16px;
+    width: 85%;
+}
+
+label{    
+    font-size: 15px;
+}
+
+#ovr{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99999;
+    top: 0%;
+    left: 0%;
+    background-color: #000000;
+    animation: curtain 2s cubic-bezier(0.19, 1, 0.22, 1) 0.6s both;
+}
+#help{
+    color: aliceblue;
+}
+
+/* background image */
+#bg{
+    background-image: url(../img/homepage.jpg);   
+}
+#bg2{
+    background-image: url(../img/news.jpg);
+}
+#bg3{
+    background-image: url(../img/weather-news.jpg);
+}
+#bg4{
+    background-image: url(../img/help1.webp);
+}
+#bg5{
+    background-image: url(../img/aboutus2.jpg);
+}
+.bgi{
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;  
+}
+
+/*weather*/
+#forecastMsg{
+    font-size: x-large ;
+    font-family:"Montserrat" ;
+    color: aliceblue;
+}
+#errormsg{
+    font-size: x-large;
+    color: white;
+    font-family:"Montserrat"
+    
+}
+
+@keyframes curtain {
+    to{
+        height: 0%;
+        /* top: 0; */
+    }
+}
+
+@keyframes reveal {
+    to{
+        opacity: 1;
+    }
+}

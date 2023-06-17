@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/css/styles.css">
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+</head>
+
+<!-- Body -->
+
+<body id="bg3" class="bgi">
+    <!-- Menu Navigation Bar -->
+   <div class="menu">
+        <div>
+        <a href="/">HOME</a>
+        <a href="/weatherapp">WEATHER</a>
+        <a href="/newsapp">NEWS</a>
+        <a href="/chatapp">CHAT</a>
+        <a href="/about">ABOUT US</a>
+        <a href="/help">HELP</a>
+    </div>
+    <div class="menu-logout">
+        <a href="" id="logout" >LOGOUT</a>
+    </div>
+    </div><br>
+    </div>
+
+    <!-- Body section -->
+    <div  style="margin-left: 20px;" class="body_sec ">
+        <section id="Content">
+            <h2>Search forecast in your city</h2>
+        </section>
+    </div>
+
+    <div style="margin-left: 20px;">
+        <form>
+            <input placeholder="location">
+            <button>search</button>
+        </form>
+        <p id="forecastMsg"></p>
+        <p id="errormsg"></p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <marquee behavior="alternate" direction="up" width="80%">
+            <marquee direction="right" behavior="alternate">Enter your city name to search wether details</marquee>
+        </marquee>
+    </footer>
+    <script src="/js/weatherClient.js"></script>
+</body>
+</html>
